@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mall.publisher.mappers.DAUMapper">
+
+   <select id="getDAUByDate" resultType="int">
+
+            select
+                count(*)
+            from GMALL2021_STARTUPLOG
+            where logDate = #{logDate}
+
+   </select>
+
+    <select id="getNewMidCountByDate" resultType="int">
+
+        select
+                count(*)
+        from
+        (
+            select
+                mid
+            from GMALL2021_STARTUPLOG
+            group by mid
+
+        ) t1
+        left join
+        (
+            select
+                mid
+            from GMALL2021_STARTUPLOG
+            where logDate &lt; #{todayDate}
+            group by mid
+
+        ) t2
+        on t1.mid = t2.mid
+        where t2.mid is null
+
+
+    </select>
+
+    <select id="getDAUPerHourOfDate" resultType="mall.publisher.beans.DAUPerHour">
+
+            select
+                logHour hour,
+                count(*) dau
+            from GMALL2021_STARTUPLOG
+            where logDate = #{logDate}
+            group by logHour
+
+    </select>
+
+</mapper>

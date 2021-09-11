@@ -1,0 +1,16 @@
+#spring:
+#  datasource:
+#    dynamic:
+#      primary: hbase #default databases
+#      strict: false
+#      datasource:
+#        hbase:
+#          url: jdbc:phoenix:hadoop102,hadoop103,hadoop104:2181 #the cluster
+#          username:
+#          password:
+#          driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
+#        mysql:
+#          url: jdbc:mysql://hadoop104:3306/test # the url of where MySQL installed username and password needed
+#          username: root
+#          password: "000000"
+#          driver-class-name: com.mysql.jdbc.Driver

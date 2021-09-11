@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+        namespace: 类似每个类的包名
+                    必须和要绑定的接口全类名一直
+
+-->
+<mapper namespace="mall.publisher.mappers.GMVMapper">
+
+    <!--
+            mybatis中为java中常用的基本数据类型，提供了别名
+
+            int =====>Integer类型的全类名
+
+            粒度： 一天中，一个设备只有一条启动日志
+    -->
+   <select id="getGMVByDate" resultType="double">
+
+            select
+                sum(gmv)
+            from gmvstats
+            where create_date = #{create_date}
+
+   </select>
+
+
+    <!--
+            将查询的结果封装为 Bean的属性时，查询的列名需要和Bean属性的名一致！
+
+
+    -->
+    <select id="getGMVPerHourOfDate" resultType="mall.publisher.beans.GMVPerHour">
+
+            select
+                create_hour hour,
+                sum(gmv) gmv
+            from gmvstats
+            where create_date = #{create_date}
+            group by create_hour
+
+    </select>
+
+</mapper>
