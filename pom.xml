@@ -163,6 +163,21 @@
                 <artifactId>canal.client</artifactId>
                 <version>1.1.2</version>
             </dependency>
+            <dependency>
+                <groupId>io.searchbox</groupId>
+                <artifactId>jest-common</artifactId>
+                <version>5.3.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>2.4.6</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>2.4.2</version>
+            </dependency>
 
         </dependencies>
 
