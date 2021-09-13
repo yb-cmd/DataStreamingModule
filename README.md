@@ -1,7 +1,9 @@
 # DataStreamingModule
 
+**ver1.0 :**
 
-A model for data streaming that can used in Big-Data scenarios. 
+
+A model for data streaming that can be used in Big-Data scenarios. 
 
 The mock data of this project was made to suit the template of ordinary e-shops, hence this project has adapt to it accordingly. The model should be able to deal with data streaming for online stores and e-shops as it was designed to deal with data came in the forms of JSON and from relational database.
 
@@ -46,7 +48,7 @@ etc.
 
 ## Data flow
 
-
+**"WIP"**
 
 ## Framework implemented
 
@@ -79,27 +81,27 @@ To simulate the real business environment, four requirements were issued :
 3. Alert : a specific kind of stats that would arouse suspicion or indicating suspicious activities 
 4. Query : quite straight forward, query. 
 
-## Modules
+## Packages
 
-### mall_common  
+### common  
 
 to put all the constants.
 
 
 
-### mall_canal
+### canal
 
 to transfer the business data to kafka waiting to be processed.
 
 
 
-### mall_logger 
+### logger 
 
 to receive the data send by clients, and store them to designated positions (in this project, kafka). 
 
 
 
-### mall_stream
+### stream
 
 to clean the original data and create the data flow to targeted software that is Hbase and ES in this case.
 
@@ -109,17 +111,21 @@ to clean the original data and create the data flow to targeted software that is
 
   
 
-### mall_publisher
+### publisher
 
-to collect with visualization apps, where the real demands should be meet.
+to connect with visualization apps, where the real demands should be meet.
 
-## Author's comments
 
-1. I won't say i'm "highly experienced" on this lol.
 
-2. This is **not a** **"serious" project,** mostly used for personal tests.
+## Notes
 
-3. This the first time decided to upload sth on Github. Sorry if any "inconveniences"(not really), I will learn.
+1. **Has not been tested in real cases!**
+
+2. This is  mostly used for personal tests.
+
+3. Some of the annotations haven't been added yet.
+
+   
 
    
 
