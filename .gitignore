@@ -24,6 +24,6 @@ hs_err_pid*
 y
 *.pub
 
-# ide files
+# ide
 .idea/
 
