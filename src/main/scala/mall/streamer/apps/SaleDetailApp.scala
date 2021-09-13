@@ -1,18 +1,23 @@
 package mall.streamer.apps
 import java.time.LocalDate
 import java.util
+
 import com.alibaba.fastjson.JSON
+
 import mall.common.constants.MyConstants
 import mall.streamer.apps.AlertApp.{appName, batchDuration, context}
 import mall.streamer.beans.{OrderDetail, OrderInfo, SaleDetail, UserInfo}
 import mall.streamer.utils.{MyKafkaUtil, RedisUtil}
-import com.google.gson.Gson
 import mall.streamer.apps.GMVApp.groupId
+
+import com.google.gson.Gson
+
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
 import org.apache.spark.streaming.kafka010.{CanCommitOffsets, HasOffsetRanges, OffsetRange}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+
 import redis.clients.jedis.Jedis
 
 import scala.collection.mutable.ListBuffer
@@ -21,7 +26,7 @@ import org.elasticsearch.spark._
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/08/18:16
  * @Description: for the query part, it has to import the business data
  */

@@ -1,12 +1,12 @@
 package mall.streamer.utils
 
 import java.util.Properties
-import redis.clients.jedis.{Jedis}
+import redis.clients.jedis.Jedis
 
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/08/14:57
  * @Description:
  */

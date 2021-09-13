@@ -1,11 +1,13 @@
 package mall.publisher.dao;
 import com.alibaba.fastjson.JSONObject;
 import mall.publisher.beans.*;
+
 import io.searchbox.client.JestClient;
 import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
 import io.searchbox.core.search.aggregation.MetricAggregation;
 import io.searchbox.core.search.aggregation.TermsAggregation;
+
 import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsBuilder;
@@ -21,7 +23,7 @@ import java.util.List;
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/09/11:19
  * @Description: for the es query example ,check the notes
  */

@@ -4,6 +4,7 @@ import com.alibaba.fastjson.{JSON, JSONObject}
 import mall.common.constants.MyConstants
 import mall.streamer.beans.{StartLogInfo, StartUpLog}
 import mall.streamer.utils.{MyKafkaUtil, RedisUtil}
+
 import org.apache.hadoop.hbase.HBaseConfiguration
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.phoenix.spark._
@@ -19,7 +20,7 @@ import java.time.{Instant, LocalDateTime, ZoneId}
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/07/18:23
  * @Description: To process and classify the log data
  *               Write the data to Hbase while IDs in Redis, also to process the data to remove any repetition

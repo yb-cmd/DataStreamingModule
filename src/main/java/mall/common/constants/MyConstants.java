@@ -3,7 +3,7 @@ package mall.common.constants;
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/09/16:00
  * @Description: constants defined in here for log data and business data.
  */

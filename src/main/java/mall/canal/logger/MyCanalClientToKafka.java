@@ -2,18 +2,21 @@ package mall.canal.logger;
 import java.net.InetSocketAddress;
 import java.util.List;
 import java.util.Random;
+
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.otter.canal.client.CanalConnector;
 import com.alibaba.otter.canal.client.CanalConnectors;
 import com.alibaba.otter.canal.protocol.CanalEntry;
 import com.alibaba.otter.canal.protocol.Message;
+
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
+
 import mall.common.constants.MyConstants;
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/11/15:37
  * @Description: pretty much the same with MyCanalClient, but added with the method sending to Kakfa
  */

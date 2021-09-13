@@ -3,7 +3,7 @@ package mall.streamer.beans
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/07/18:31
  * @Description:
  */

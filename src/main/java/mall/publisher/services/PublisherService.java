@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/09/10:58
  * @Description: the interface for different types of queries
  */

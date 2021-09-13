@@ -1,8 +1,10 @@
 package mall.publisher.services;
 import com.alibaba.fastjson.JSONObject;
+
 import mall.publisher.dao.*;
 import mall.publisher.beans.*;
 import mall.publisher.mappers.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +14,7 @@ import java.util.List;
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/09/11:12
  * @Description:
  */

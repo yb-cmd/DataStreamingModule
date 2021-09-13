@@ -4,6 +4,7 @@ import com.alibaba.fastjson.{JSON, JSONObject}
 import mall.common.constants.MyConstants
 import mall.streamer.beans.{Action, ActionsLog, CommonInfo, CouponAlertInfo}
 import mall.streamer.utils.MyKafkaUtil
+
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
@@ -20,7 +21,7 @@ import scala.util.control.Breaks
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/08/16:31
  * @Description:
  */

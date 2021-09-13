@@ -12,7 +12,7 @@ import java.util.Properties
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/08/14:58
  * @Description: to read the data from kafka and convert to DataStream
  */

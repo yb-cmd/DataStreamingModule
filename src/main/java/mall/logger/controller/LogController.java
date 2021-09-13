@@ -1,8 +1,11 @@
 package mall.logger.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+
 import mall.common.constants.MyConstants;
+
 import lombok.extern.log4j.Log4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;

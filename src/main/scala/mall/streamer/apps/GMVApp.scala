@@ -1,9 +1,11 @@
 package mall.streamer.apps
 
 import com.alibaba.fastjson.JSON
+
 import mall.common.constants.MyConstants
 import mall.streamer.beans.OrderInfo
 import mall.streamer.utils.{JDBCUtil, MyJDBCUtil, MyKafkaUtil}
+
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.TopicPartition
 import org.apache.spark.rdd.RDD
@@ -18,7 +20,7 @@ import java.time.format.DateTimeFormatter
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/08/15:37
  * @Description: to count the GMV to ensure the "exactly once" data + offsets will be insert into MySQL via one transaction
  */

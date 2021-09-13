@@ -1,18 +1,21 @@
 package mall.publisher.controller;
+
+import com.alibaba.fastjson.JSONObject;
+import mall.publisher.beans.DAUPerHour;
+import mall.publisher.beans.GMVPerHour;
+import mall.publisher.services.PublisherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import com.alibaba.fastjson.JSONObject;
-import mall.publisher.beans.*;
-import mall.publisher.services.PublisherService;
+
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/09/10:56
  * @Description: Unfinished
  */

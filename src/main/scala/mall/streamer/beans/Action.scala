@@ -5,7 +5,7 @@ import scala.collection.mutable.ListBuffer
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/08/15:26
  * @Description: create alert logs
  */

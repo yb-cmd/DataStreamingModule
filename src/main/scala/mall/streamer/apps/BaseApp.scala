@@ -3,7 +3,7 @@ import org.apache.spark.streaming.StreamingContext
 /**
  * For educational purposes only
  *
- * @Author: REN
+ * @Author: saltsdealer@gmail.com
  * @Date: 2021/09/07/18:21
  * @Description: the model for other functions, to save some writing
  */
