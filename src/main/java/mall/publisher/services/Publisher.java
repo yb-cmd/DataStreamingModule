@@ -1,11 +1,8 @@
 package mall.publisher.services;
-
 import com.alibaba.fastjson.JSONObject;
-import com.testrr.ecommerce.mall_publisher.*;
-import com.testrr.ecommerce.mall_publisher.DAO.ESDAO;
-import com.testrr.ecommerce.mall_publisher.beans.*;
-import com.testrr.ecommerce.mall_publisher.mappers.DAUMapper;
-import com.testrr.ecommerce.mall_publisher.mappers.GMVMapper;
+import mall.publisher.dao.*;
+import mall.publisher.beans.*;
+import mall.publisher.mappers.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
