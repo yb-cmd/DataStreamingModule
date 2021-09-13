@@ -11,14 +11,12 @@ import java.util.List;
  *
  * @Author: REN
  * @Date: 2021/09/09/10:58
- * @Description: the interface for different types of queries, it would be best to implement this interface to
- *               fulfill the demands
+ * @Description: the interface for different types of queries
  */
 public interface PublisherService {
 
     //DAU
     Integer getDAUByDate(String date);
-
 
     Integer getNewMidCountByDate(String date);
 
