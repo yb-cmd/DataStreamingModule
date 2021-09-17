@@ -50,6 +50,10 @@ etc.
 
 **"WIP"**
 
+Logger/Canal (two types of data) --------> kafka ---------> ES/Hbase -------> web(Publisher)---------> visualization(not included) 
+
+
+
 ## Framework implemented
 
 MySQL 5.7
@@ -123,7 +127,7 @@ to connect with visualization apps, where the real demands should be meet.
 
 2. This is  mostly used for personal tests.
 
-3. Some of the annotations haven't been added yet.
+3. Some annotations haven't been added yet.
 
    
 
