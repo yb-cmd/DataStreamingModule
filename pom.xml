@@ -75,7 +75,6 @@
                 <version>${kafka.client.version}</version>
             </dependency>
 
-                <!-- 具体的日志实现 -->
                 <dependency>
                     <groupId>log4j</groupId>
                     <artifactId>log4j</artifactId>
